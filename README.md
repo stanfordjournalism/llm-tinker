@@ -3,7 +3,7 @@
 A basic repo demonstrating how to set up a local LLM environment using Ollama and LangChain.
 
 - `llm_tinker.ipynb`: A Jupyter Notebook that demonstrates how to use Ollama with LangChain.
-- `label_trump_tweets.ipynb`: A Jupyter Notebook that demonstrates how to use Ollama with LangChain to classify, or label, tweets about Trump. The notebook demonstrates how to identify tweets by type (text-only, media-only, or both). Your task to perform additional classification of the tweets by building on this notebook, e.g. to classify the tweets by sentiment or topic.
+- `label_trump_tweets.ipynb`: A Jupyter Notebook that demonstrates how to use Ollama with LangChain to classify, or label, tweets by Trump. The notebook demonstrates how to identify tweets by type (text-only, media-only, or both). Your task to perform additional classification of the tweets by building on this notebook, e.g. to classify the tweets by sentiment or topic.
 
 ## Setup
 
@@ -15,7 +15,8 @@ Install an open model using Ollama. For example, to install the
 multi-modal 'gemma 3' model, run the following command in the terminal:
 
 > WARNING: This will install a model that is 3.3GB in size, so make sure you have enough disk space.
-> You also likely will need at least 8GB of free RAM -- ie amount beyond what you're already using -- to run this model. If
+> You also likely will need at least 8GB of free RAM -- ie amount beyond what you're already using
+> -- to run this model. If
 > you have less RAM or disk space, you can try a smaller model, such as `gemma3:1b`
 
 ```bash
@@ -59,7 +60,7 @@ uv add jupyterlab ipykernel pandas langchain_ollama
 
 ## Create a Jupyter Notebook
 
-> Below steps are adapated from the [Ollama Quickstart](https://python.langchain.com/docs/how_to/local_llms/#quickstart)
+> Below steps are adapated from the [Ollama Quickstart](https://python.langchain.com/docs/how_to/local_llms/#quickstart) and illustrated in `llm_tinker.ipynb`.
 
 Open up the new code project in VS Code.
 
@@ -67,7 +68,7 @@ Then create a new Jupyter Notebook file called `llm-tinker.ipynb`.
 
 Make sure to select the correct Python kernel for the notebook in the upper right corner of the notebook.
 
-Add the following cells to the notebook and execute them.
+Add the following cell to the notebook and execute it.
 
 ```python
 from langchain_ollama import OllamaLLM
@@ -75,13 +76,13 @@ from langchain_ollama import OllamaLLM
 
 If you see a green check mark, then the package is installed correctly.
 
-Here's a simple example of how to use the OllamaLLM class to invoke a model:
+Here's a simple example of how to use the `OllamaLLM` class to invoke a model:
 
 ```python
+# Note we're specifying the name of the model we installed with Ollama
 llm = OllamaLLM(model="gemma3")
 llm.invoke("What is the capital of France?")
 ```
 
 > See [label_trump_tweets.ipynb](label_trump_tweets.ipynb) for a more advanced example of how to use Ollama with LangChain to classify tweets about Trump, with guidance on additional classification tasks you can perform.
-
 
