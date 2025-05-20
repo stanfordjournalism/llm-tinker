@@ -7,7 +7,7 @@ Work through the notebooks in order listed below if you're new to this topic.
 > IMPORTANT: Before you start, make sure to follow the setup instructions below.
 
 - [llm_tinker.ipynb](llm_tinker.ipynb): Basic setup/usage of Ollama + LangChain in Jupyter, and some important notes.
-- [label_trump_tweets.ipynb](label_trump_tweets.ipynb): A Jupyter Notebook that demonstrates how to use Ollama with LangChain to classify, or label, tweets by Trump. The notebook demonstrates how to identify tweets by type (text-only, media-only, or both). Your task to perform additional classification of the tweets by building on this notebook, e.g. to classify the tweets by sentiment or topic.
+- [label_trump_tweets.ipynb](label_trump_tweets.ipynb): A Jupyter Notebook that demonstrates how to use Ollama with LangChain to classify, or label, tweets by Trump. The notebook demonstrates how to identify tweets by type (text-only, media-only, or both). Guidance on how to refine and perform additional classification tasks are provided at the end of the notebook.
 
 ## Setup
 
