@@ -2,8 +2,8 @@
 
 A basic repo demonstrating how to set up a local LLM environment using Ollama and LangChain.
 
-- `llm_tinker.ipynb`: A Jupyter Notebook that demonstrates how to use Ollama with LangChain.
-- `label_trump_tweets.ipynb`: A Jupyter Notebook that demonstrates how to use Ollama with LangChain to classify, or label, tweets by Trump. The notebook demonstrates how to identify tweets by type (text-only, media-only, or both). Your task to perform additional classification of the tweets by building on this notebook, e.g. to classify the tweets by sentiment or topic.
+- [llm_tinker.ipynb](llm_tinker.ipynb): A Jupyter Notebook that demonstrates how to use Ollama with LangChain.
+- [label_trump_tweets.ipynb](label_trump_tweets.ipynb): A Jupyter Notebook that demonstrates how to use Ollama with LangChain to classify, or label, tweets by Trump. The notebook demonstrates how to identify tweets by type (text-only, media-only, or both). Your task to perform additional classification of the tweets by building on this notebook, e.g. to classify the tweets by sentiment or topic.
 
 ## Setup
 
@@ -58,13 +58,13 @@ uv init
 uv add jupyterlab ipykernel pandas langchain_ollama
 ```
 
-## Create a Jupyter Notebook
+## Working in VS Code
 
 > Below steps are adapated from the [Ollama Quickstart](https://python.langchain.com/docs/how_to/local_llms/#quickstart) and illustrated in `llm_tinker.ipynb`.
 
 Open up the new code project in VS Code.
 
-Then create a new Jupyter Notebook file called `llm-tinker.ipynb`.
+Then create a new Jupyter Notebook file, e.g. `my-llm-classifier.ipynb`.
 
 Make sure to select the correct Python kernel for the notebook in the upper right corner of the notebook.
 
